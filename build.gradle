@@ -36,5 +36,8 @@ publishing {
         gpr(MavenPublication) {
             from(components.java)
         }
+        mavenJava(MavenPublication) {
+            from components.java
+        }
     }
 }
