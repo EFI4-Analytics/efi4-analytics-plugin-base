@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.efigence'
-version '1.0.1'
+version '1.0.2'
 
 sourceCompatibility = 1.8
 
@@ -35,9 +35,6 @@ publishing {
     publications {
         gpr(MavenPublication) {
             from(components.java)
-        }
-        mavenJava(MavenPublication) {
-            from components.java
         }
     }
 }
