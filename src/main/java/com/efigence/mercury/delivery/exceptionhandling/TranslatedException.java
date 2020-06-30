@@ -1,6 +1,6 @@
 package com.efigence.mercury.delivery.exceptionhandling;
 
-class TranslatedException {
+public class TranslatedException {
 
     private String message;
     private Exception exception;
