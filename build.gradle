@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.efigence'
-version '1.0.3'
+version '1.0.4'
 
 sourceCompatibility = 1.8
 
@@ -17,8 +17,13 @@ ext {
 }
 
 dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
     compile "com.google.guava:guava:$guavaVersion"
     compile "org.springframework:spring-web:4.3.7.RELEASE"
+    compile "com.fasterxml.jackson.core:jackson-annotations:2.9.10"
+    compile "io.swagger:swagger-annotations:1.5.20"
 }
 
 publishing {
